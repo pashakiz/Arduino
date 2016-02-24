@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+	//higlight pictures
+	$(".proof-photos__item").on("mouseover", function() {
+		$(".proof-photos__item").removeClass("active");
+		$(this).addClass("active");
+	});
+	$(".proof-photos__item").on("mouseout", function() {
+		$(".proof-photos__item").removeClass("active");
+		$(".proof-photos__item.last").addClass("active");
+	});
+
 	//Placeholder
 	//Doc: https://github.com/NV/placeholder.js/
 	$("[placeholder]").textPlaceholder();

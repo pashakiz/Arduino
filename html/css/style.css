@@ -182,7 +182,7 @@ header .btn1form {
 	width: 100%;
 	height: auto;
 }
-.proof-photos__item:hover .proof-photos__hover {
+.proof-photos__item.active .proof-photos__hover {
 	display: block;
 }
 .proof-photos__hover {
