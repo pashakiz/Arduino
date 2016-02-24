@@ -20,10 +20,11 @@ $(document).ready(function() {
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("form").submit(function() {
+	$("form#f1").submit(function() {
 
-		var name = $(this).find("input[name='name']").val(),
-			email = $(this).find("input[name='email']").val();
+		var form = $(this),
+			name = form.find("input[name='name']").val(),
+			email = form.find("input[name='email']").val();
 
 		if (!name || !email) {
 			alert("Заполните поля формы.");
@@ -40,20 +41,59 @@ $(document).ready(function() {
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
-			data: $("form").serialize(),
+			data: $("form#f1").serialize(),
 			success: function(data) {
-				//$('#order_status').html(data);
-				$('#order_status').html('Спасибо, Ваша заявка отправлена!');
-				console.log("jquery-ajax-mail-success");
+				$("#order_status").show();
+				form.hide();
 			},
 			error:  function(xhr, str){
 				alert('Возникла ошибка: ' + xhr.responseCode);
 			}
 		}).done(function() {
-			alert("Спасибо за заявку!");
+			//alert("Спасибо за заявку!");
 			setTimeout(function() {
 				$.fancybox.close();
-			}, 1000);
+			}, 2000);
+		});
+		return false;
+	});
+
+	$("form#f2").submit(function() {
+
+		var form = $(this),
+			name = form.find("input[name='name']").val(),
+			email = form.find("input[name='email']").val(),
+			phone = form.find("input[name='phone']").val(),
+			org = form.find("input[name='org']").val();
+
+		if (!name || !email || !phone || !org) {
+			alert("Заполните поля формы.");
+			return false;
+		}
+
+		var email_regexp = /.+@.+\..+/i;
+		var email_test = email_regexp.test(email);
+		if (!email_test) {
+			alert("Введен некоректный Email-адрес.");
+			return false;
+		}
+
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $("form#f2").serialize(),
+			success: function(data) {
+				$("#order_status").show();
+				form.hide();
+			},
+			error:  function(xhr, str){
+				alert('Возникла ошибка: ' + xhr.responseCode);
+			}
+		}).done(function() {
+			//alert("Спасибо за заявку!");
+			setTimeout(function() {
+				$.fancybox.close();
+			}, 2000);
 		});
 		return false;
 	});

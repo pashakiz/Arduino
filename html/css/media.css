@@ -35,12 +35,40 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+	header {
+		height: 485px;
+	}
+	.proof-photos__item {
+		width: 20%;
+		height: 20%;
+	}
+	.proof-photos__hover__t1 {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.proof-photos__hover__t2 {
+		font-size: 19px;
+		line-height: 25px;
+	}
+	.proof-photos__hover__text {
+		margin: -27px 0 0 -39px;
+	}
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	.proof-photos__hover__text {
+		margin: -28px 0 0 -52px;
+	}
+	.proof-photos__hover__t1 {
+		font-size: 33px;
+		line-height: 32px;
+	}
+	.proof-photos__hover__t2 {
+		font-size: 26px;
+		line-height: 25px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -51,6 +79,84 @@
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	.container {
-		width: 990px;
+		width: 1000px;
+	}
+	header .title {
+		float: left;
+		width: 50%;
+		margin-top: 196px;
+		line-height: 44px;
+		font-size: 42px;
+		letter-spacing: 2px;
+		text-align: left;
+	}
+	header .about {
+		float: left;
+		width: 50%;
+		margin-top: 98px;
+		line-height: 23px;
+		font-size: 18px;
+		text-align: left;
+	}
+	header .btn1form {
+		width: 292px;
+		margin: 75px 0 0;
+		line-height: 24px;
+		font-size: 20px;
+	}
+	.bulets .block {
+		float: right;
+		width: 50%;
+	}
+	.bulets .list-chip {
+		padding: 0;
+	}
+	.bulets .price {
+		font-size: 20px;
+		margin: 36px 0 0 -30px;
+		text-align: left;
+	}
+	.bulets .price > br {
+		display: none;
+	}
+	.bulets .image-container {
+		width: 411px;
+		height: 318px;
+		margin: 0;
+	}
+	.bulets .btn2form {
+		width: 312px;
+		line-height: 24px;
+		font-size: 20px;
+		margin: 46px 0 0;
+	}
+	.proof-text .text-row1__item {
+		float: left;
+	}
+	.proof-text .text-row1__item1 {
+		width: 552px;
+		text-align: right;
+		margin-bottom: 0;
+	}
+	.proof-text .text-row1__item2 {
+		margin: 0 36px;
+	}
+	.proof-text .text-row1__item3 {
+		margin: 0;
+	}
+	.proof-photos__item {
+		width: 194px;
+		height: 194px;
+	}
+
+
+	footer .copy {
+		float: left;
+		text-align: left;
+		margin-bottom: 0;
+	}
+	footer .contact {
+		float: right;
+		text-align: right;
 	}
 }
