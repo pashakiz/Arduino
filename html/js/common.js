@@ -53,8 +53,9 @@ $(document).ready(function() {
 			url: "mail.php",
 			data: $("form#f1").serialize(),
 			success: function(data) {
-				$("#order_status").show();
-				form.hide();
+				$(".order_status").show();
+				$("form#f1").hide();
+				$("form#f2").hide();
 			},
 			error:  function(xhr, str){
 				alert('Возникла ошибка: ' + xhr.responseCode);
@@ -93,8 +94,9 @@ $(document).ready(function() {
 			url: "mail.php",
 			data: $("form#f2").serialize(),
 			success: function(data) {
-				$("#order_status").show();
-				form.hide();
+				$(".order_status").show();
+				$("form#f1").hide();
+				$("form#f2").hide();
 			},
 			error:  function(xhr, str){
 				alert('Возникла ошибка: ' + xhr.responseCode);
