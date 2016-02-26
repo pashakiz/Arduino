@@ -238,7 +238,7 @@ footer .contact {}
 	padding: 10px;
 	margin-bottom: 15px;
 }
-.form button {
+.form .btn-submit {
 	display: block;
 	width: 240px;
 	padding: 10px;

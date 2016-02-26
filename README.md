@@ -22,6 +22,6 @@
 
 Аккаунт к джумле:<br>
 `editor`<br>
-`soon...`<br>
+`)T:c9S;d@!spQ.V!xF\/`<br>
 
 Используемая тема: http://jblank.pro/
