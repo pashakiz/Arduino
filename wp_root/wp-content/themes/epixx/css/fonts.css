@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "Sceptica";
+	src: url("../fonts/sceptica/sceptica.eot");
+	src: url("../fonts/sceptica/sceptica.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/sceptica/sceptica.woff") format("woff"),
+	url("../fonts/sceptica/sceptica.ttf") format("truetype"),
+	url("../fonts/sceptica/sceptica.svg#Sceptica") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Sceptica";
+	src: url("../fonts/sceptica/sceptica-bold.eot");
+	src: url("../fonts/sceptica/sceptica-bold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/sceptica/sceptica-bold.woff") format("woff"),
+	url("../fonts/sceptica/sceptica-bold.ttf") format("truetype"),
+	url("../fonts/sceptica/sceptica-bold.svg#ScepticaBold") format("svg");
+	font-style: normal;
+	font-weight: bold;
+}

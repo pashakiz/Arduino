@@ -3,25 +3,14 @@
 ##/html/
 Готовая верстка.
 
-##/joomla_root/
-Папка с темой, натянутой на Joomla и БД.<br>
-Путь к папке с темой: `/templates/jblank/`<br>
+##/wp_root/
+Папка с WordPress и БД.<br>
+Путь к папке с темой: `/wp-content/themes/epixx`<br>
 
-В файле configuration.php нужно изменить некторые строки.<br>
-Доступ в БД:<br>
-`public $user = 'DATABASE_USERNAME';`<br>
-`public $password = 'DATABASE_PASSWORD';`<br>
-`public $db = 'DATABASE_NAME';`<br>
-Пути к логам и временной дирректории:<br>
-`public $log_path = '/var/www/.../logs';`<br>
-`public $tmp_path = '/var/www/.../tmp';`<br>
+В файле wp-config.php нужно прописать доступ к БД<br>
 
-Версия:<br>
-`Joomla! Version: Joomla! 3.4.8 Stable [ Ember ] 24-December-2015 19:30 GMT`<br>
-`Joomla! Platform Version: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT`<br>
-
-Аккаунт к джумле:<br>
+Аккаунт к WP:<br>
 `editor`<br>
-`)T:c9S;d@!spQ.V!xF\/`<br>
+`#j6S(y^@AJKBDpU%Upde6`<br>
 
-Используемая тема: http://jblank.pro/
+Версия: `WordPress 4.4.2`<br>

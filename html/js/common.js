@@ -52,10 +52,11 @@ $(document).ready(function() {
 			type: "POST",
 			url: "mail.php",
 			data: $("form#f1").serialize(),
-			success: function(data) {
+			success: function(response) {
 				$(".order_status").show();
 				$("form#f1").hide();
 				$("form#f2").hide();
+				console.log('response: ' + response);
 			},
 			error:  function(xhr, str){
 				alert('Возникла ошибка: ' + xhr.responseCode);
@@ -93,10 +94,11 @@ $(document).ready(function() {
 			type: "POST",
 			url: "mail.php",
 			data: $("form#f2").serialize(),
-			success: function(data) {
+			success: function(response) {
 				$(".order_status").show();
 				$("form#f1").hide();
 				$("form#f2").hide();
+				console.log('response: ' + response);
 			},
 			error:  function(xhr, str){
 				alert('Возникла ошибка: ' + xhr.responseCode);
